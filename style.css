@@ -1,0 +1,2724 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+
+
+
+
+
+/* =========================
+
+   SIDEBAR
+
+\========================= */
+
+
+
+.sidebar {
+
+    width: 250px;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 25px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+
+}
+
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 40px;
+
+    padding-left: 10px;
+
+}
+
+
+
+.logo span {
+
+    font-size: 17px;
+
+    line-height: 1.3;
+
+}
+
+
+
+.sidebar nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+
+.sidebar a {
+
+    text-decoration: none;
+
+    color: #cbd5e1;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+
+}
+
+
+
+.sidebar a:hover {
+
+    background: #1f2937;
+
+    color: white;
+
+}
+
+
+
+.sidebar a.active {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+
+.sidebar-bottom {
+
+    margin-top: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+
+
+
+/* =========================
+
+   MAIN CONTENT
+
+\========================= */
+
+
+
+.main-content {
+
+    flex: 1;
+
+    padding: 30px 40px;
+
+}
+
+
+
+
+
+/* =========================
+
+   TOP BAR
+
+\========================= */
+
+
+
+.topbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+.topbar h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 6px;
+
+}
+
+
+
+.topbar p {
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+}
+
+
+
+.profile {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: white;
+
+    padding: 9px 15px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+}
+
+
+
+.profile-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    background: #e0e7ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+.profile strong {
+
+    display: block;
+
+    font-size: 14px;
+
+}
+
+
+
+.profile small {
+
+    color: #6b7280;
+
+}
+
+
+
+
+
+/* =========================
+
+   WELCOME CARD
+
+\========================= */
+
+
+
+.welcome-card {
+
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+
+}
+
+
+
+.welcome-card h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.welcome-card p {
+
+    max-width: 650px;
+
+    line-height: 1.6;
+
+    opacity: 0.9;
+
+}
+
+
+
+
+
+/* =========================
+
+   SECTION TITLE
+
+\========================= */
+
+
+
+.section-title {
+
+    font-size: 21px;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+
+
+/* =========================
+
+   CARDS
+
+\========================= */
+
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+.card {
+
+    background: white;
+
+    padding: 23px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+
+
+.card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.card-icon {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.card h3 {
+
+    margin-bottom: 9px;
+
+    font-size: 18px;
+
+}
+
+
+
+.card p {
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    min-height: 65px;
+
+}
+
+
+
+.card button {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+}
+
+
+
+.card button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+
+
+
+/* =========================
+
+   AI SEARCH
+
+\========================= */
+
+
+
+.ai-search {
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+
+}
+
+
+
+.ai-search h2 {
+
+    margin-bottom: 6px;
+
+}
+
+
+
+.ai-search p {
+
+    color: #6b7280;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.search-box {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+
+.search-box input {
+
+    flex: 1;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+
+.search-box input:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+
+.search-box button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 0 25px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+
+.search-box button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+
+
+
+/* =========================
+
+   RESPONSIVE DESIGN
+
+\========================= */
+
+
+
+@media (max-width: 1100px) {
+
+
+
+    .cards {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
+}
+
+
+
+@media (max-width: 750px) {
+
+
+
+    .sidebar {
+
+        width: 200px;
+
+    }
+
+
+
+    .main-content {
+
+        padding: 25px;
+
+    }
+
+
+
+    .topbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+
+
+    body {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .sidebar {
+
+        width: 100%;
+
+        min-height: auto;
+
+    }
+
+
+
+    .sidebar-bottom {
+
+        margin-top: 20px;
+
+    }
+
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .main-content {
+
+        padding: 20px;
+
+    }
+
+
+
+    .search-box {
+
+        flex-direction: column;
+
+    }
+
+
+
+    .search-box button {
+
+        padding: 12px;
+
+    }
+
+
+
+}
+
+/* =========================
+
+   AI CHAT PAGE
+
+\========================= */
+
+
+
+.chat-page {
+
+    display: none;
+
+}
+
+
+
+.chat-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.chat-header h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 6px;
+
+}
+
+
+
+.chat-header p {
+
+    color: #6b7280;
+
+}
+
+
+
+.back-button {
+
+    border: none;
+
+    background: #e5e7eb;
+
+    color: #1f2937;
+
+    padding: 11px 17px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+
+.back-button:hover {
+
+    background: #d1d5db;
+
+}
+
+
+
+.chat-container {
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+
+    height: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+}
+
+
+
+.chat-messages {
+
+    flex: 1;
+
+    padding: 30px;
+
+    overflow-y: auto;
+
+}
+
+
+
+.message {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.message-avatar {
+
+    width: 42px;
+
+    height: 42px;
+
+    background: #e0e7ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+}
+
+
+
+.message-content {
+
+    max-width: 75%;
+
+}
+
+
+
+.message-content strong {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+}
+
+
+
+.message-content p {
+
+    background: #f3f4f6;
+
+    padding: 13px 16px;
+
+    border-radius: 10px;
+
+    line-height: 1.5;
+
+}
+
+
+
+.chat-input-area {
+
+    display: flex;
+
+    gap: 10px;
+
+    padding: 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+}
+
+
+
+.chat-input-area input {
+
+    flex: 1;
+
+    border: 1px solid #d1d5db;
+
+    padding: 14px 16px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+
+.chat-input-area input:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+
+.chat-input-area button {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 0 25px;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+
+.chat-input-area button:hover {
+
+    background: #1d4ed8;
+
+}
+
+/* ==========================================
+
+   MODERN CHAT UI
+
+\========================================== */
+
+
+
+.user-message {
+
+    justify-content: flex-end;
+
+}
+
+
+
+.user-message .message-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+}
+
+
+
+.user-message .message-content p {
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 14px 14px 4px 14px;
+
+}
+
+
+
+.user-avatar {
+
+    background: #dbeafe;
+
+}
+
+
+
+.message-content small {
+
+    display: block;
+
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    margin-top: 5px;
+
+}
+
+
+
+
+
+/* Typing animation */
+
+
+
+.typing {
+
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 5px;
+
+    width: fit-content;
+
+}
+
+
+
+.typing span {
+
+    width: 7px;
+
+    height: 7px;
+
+    background: #6b7280;
+
+    border-radius: 50%;
+
+    animation: typingAnimation 1.2s infinite;
+
+}
+
+
+
+.typing span:nth-child(2) {
+
+    animation-delay: 0.2s;
+
+}
+
+
+
+.typing span:nth-child(3) {
+
+    animation-delay: 0.4s;
+
+}
+
+
+
+@keyframes typingAnimation {
+
+
+
+    0%,
+
+    60%,
+
+    100% {
+
+        transform: translateY(0);
+
+        opacity: 0.4;
+
+    }
+
+
+
+    30% {
+
+        transform: translateY(-5px);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+
+
+/* Disabled send button */
+
+
+
+.chat-input-area button:disabled {
+
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+}
+
+
+
+
+
+/* Better chat input */
+
+
+
+.chat-input-area input::placeholder {
+
+    color: #9ca3af;
+
+}
+
+
+
+
+
+/* Mobile chat */
+
+
+
+@media (max-width: 600px) {
+
+
+
+    .chat-container {
+
+        height: calc(100vh - 180px);
+
+    }
+
+
+
+    .chat-messages {
+
+        padding: 18px;
+
+    }
+
+
+
+    .message-content {
+
+        max-width: 85%;
+
+    }
+
+
+
+    .chat-input-area {
+
+        padding: 12px;
+
+    }
+
+
+
+}
+
+/* ============================================
+
+   MODERN LOGIN PAGE (Exact match to mockup UI)
+
+   ============================================ */
+
+
+
+.login-page {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: stretch;
+
+    background: #0b1120 url('images/login-image.png') no-repeat left center;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    font-family: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    overflow-x: hidden;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Left area is flexible and transparent to reveal the illustration, EduAI branding, headline & badges */
+
+.login-left-area {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+
+/* Right area: Wave backdrop & Card Container */
+
+.login-right-area {
+
+    position: relative;
+
+    width: 44%;
+
+    min-width: 480px;
+
+    max-width: 640px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 32px;
+
+    z-index: 5;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Organic Wave Backdrop sweeping from top-right to bottom */
+
+.login-wave-backdrop {
+
+    position: absolute;
+
+    top: 0;
+
+    bottom: 0;
+
+    left: -130px;
+
+    right: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    overflow: hidden;
+
+}
+
+
+
+.login-wave-svg {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    filter: drop-shadow(-12px 0 30px rgba(15, 23, 42, 0.08));
+
+}
+
+
+
+/* Floating Login Card */
+
+.login-card-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 440px;
+
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    padding: 42px 38px;
+
+    box-sizing: border-box;
+
+    box-shadow:&#x20;
+
+        0 20px 45px -10px rgba(15, 23, 42, 0.09),
+
+        0 2px 12px rgba(15, 23, 42, 0.03),
+
+        0 0 0 1px rgba(226, 232, 240, 0.6);
+
+}
+
+
+
+.login-form {
+
+    width: 100%;
+
+    text-align: left;
+
+}
+
+
+
+.login-title {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #0f172a;
+
+    letter-spacing: -0.4px;
+
+    margin: 0 0 6px 0;
+
+    line-height: 1.25;
+
+}
+
+
+
+.login-subtitle {
+
+    font-size: 14px;
+
+    color: #64748b;
+
+    margin: 0 0 26px 0;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* Inputs */
+
+.login-input-group {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.login-input {
+
+    width: 100%;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 16px;
+
+    box-sizing: border-box;
+
+    border: 1px solid transparent;
+
+    border-radius: 12px;
+
+    background: #f1f5f9;
+
+    transition: all 0.2s ease;
+
+}
+
+
+
+.login-input:focus-within {
+
+    background: #ffffff;
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+
+}
+
+
+
+.login-input .input-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #64748b;
+
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+
+}
+
+
+
+.login-input .input-icon svg {
+
+    width: 19px;
+
+    height: 19px;
+
+}
+
+
+
+.login-input input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14.5px;
+
+    color: #0f172a;
+
+    font-family: inherit;
+
+}
+
+
+
+.login-input input::placeholder {
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+}
+
+
+
+/* Password Eye Toggle */
+
+.password-toggle-btn {
+
+    background: none;
+
+    border: none;
+
+    padding: 4px;
+
+    cursor: pointer;
+
+    color: #64748b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: color 0.15s;
+
+    border-radius: 6px;
+
+}
+
+
+
+.password-toggle-btn:hover {
+
+    color: #1e293b;
+
+}
+
+
+
+.password-toggle-btn svg {
+
+    width: 20px;
+
+    height: 20px;
+
+}
+
+
+
+/* Remember Me & Forgot Password Row */
+
+.login-row-options {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 16px 0 22px 0;
+
+}
+
+
+
+.remember-me-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    font-size: 13.5px;
+
+    color: #334155;
+
+    user-select: none;
+
+}
+
+
+
+.remember-me-label input[type="checkbox"] {
+
+    position: absolute;
+
+    opacity: 0;
+
+    width: 0;
+
+    height: 0;
+
+}
+
+
+
+.custom-checkbox {
+
+    width: 18px;
+
+    height: 18px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: all 0.15s ease;
+
+    flex-shrink: 0;
+
+}
+
+
+
+.remember-me-label:hover .custom-checkbox {
+
+    border-color: #94a3b8;
+
+}
+
+
+
+.remember-me-label input[type="checkbox"]:checked \~ .custom-checkbox {
+
+    background: #3b82f6;
+
+    border-color: #3b82f6;
+
+}
+
+
+
+.remember-me-label input[type="checkbox"]:checked \~ .custom-checkbox::after {
+
+    content: "";
+
+    width: 4.5px;
+
+    height: 8.5px;
+
+    border: solid white;
+
+    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+
+    margin-bottom: 2px;
+
+}
+
+
+
+.remember-me-text {
+
+    font-weight: 500;
+
+}
+
+
+
+.forgot-password {
+
+    color: #2563eb;
+
+    font-size: 13.5px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.15s;
+
+}
+
+
+
+.forgot-password:hover {
+
+    color: #1d4ed8;
+
+    text-decoration: underline;
+
+}
+
+
+
+/* Primary Login Button */
+
+.custom-login-button {
+
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+
+    box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.45);
+
+    transition: all 0.2s ease;
+
+}
+
+
+
+.custom-login-button:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 12px 25px -4px rgba(59, 130, 246, 0.55);
+
+    filter: brightness(1.03);
+
+}
+
+
+
+.custom-login-button:active {
+
+    transform: translateY(0);
+
+}
+
+
+
+.custom-login-button:disabled {
+
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+
+
+.custom-login-button span {
+
+    font-size: 18px;
+
+    transition: transform 0.2s;
+
+}
+
+
+
+.custom-login-button:hover span {
+
+    transform: translateX(3px);
+
+}
+
+
+
+/* Divider (OR) */
+
+.login-divider {
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 20px 0 18px 0;
+
+}
+
+
+
+.divider-line {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #e2e8f0;
+
+}
+
+
+
+.divider-text {
+
+    padding: 0 14px;
+
+    font-size: 11.5px;
+
+    font-weight: 600;
+
+    color: #94a3b8;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+/* Google Login Button */
+
+.google-login-button {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    font-size: 14.5px;
+
+    font-weight: 600;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    transition: all 0.2s ease;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+
+}
+
+
+
+.google-login-button:hover {
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+.google-icon {
+
+    width: 18px;
+
+    height: 18px;
+
+    flex-shrink: 0;
+
+}
+
+
+
+/* Security Note */
+
+.login-security {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 24px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: #64748b;
+
+}
+
+
+
+.cognito-lock-icon {
+
+    width: 14px;
+
+    height: 14px;
+
+    stroke: #64748b;
+
+    flex-shrink: 0;
+
+}
+
+
+
+/* Responsive Breakpoints */
+
+@media (max-width: 1024px) {
+
+    .login-page {
+
+        justify-content: center;
+
+        background-position: center;
+
+    }
+
+
+
+    .login-left-area {
+
+        display: none;
+
+    }
+
+
+
+    .login-right-area {
+
+        width: 100%;
+
+        max-width: 520px;
+
+        min-width: unset;
+
+        padding: 30px 20px;
+
+    }
+
+
+
+    .login-wave-backdrop {
+
+        left: 0;
+
+    }
+
+
+
+    .login-wave-backdrop svg {
+
+        display: none;
+
+    }
+
+
+
+    .login-wave-backdrop {
+
+        background: rgba(255, 255, 255, 0.88);
+
+        backdrop-filter: blur(12px);
+
+        -webkit-backdrop-filter: blur(12px);
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .login-card-container {
+
+        padding: 30px 20px;
+
+        border-radius: 20px;
+
+    }
+
+
+
+    .login-title {
+
+        font-size: 24px;
+
+    }
+
+}
+
+/* ==========================================
+
+   FORGOT PASSWORD PAGE
+
+\========================================== */
+
+
+
+.forgot-password-page {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: #f3f6ff;
+
+}
+
+
+
+.forgot-password-card {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    padding: 55px 50px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(31, 56, 100, 0.15);
+
+}
+
+
+
+.forgot-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    font-size: 35px;
+
+    background: #eef4ff;
+
+}
+
+
+
+.forgot-password-card h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 34px;
+
+    color: #142247;
+
+}
+
+
+
+.forgot-subtitle {
+
+    margin: 0 auto 30px;
+
+    max-width: 420px;
+
+    color: #68738c;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+
+.reset-code-message {
+
+    margin-bottom: 20px;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    background: #f0f6ff;
+
+    color: #52617c;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+
+.back-to-login {
+
+    margin-top: 25px;
+
+}
+
+
+
+.back-to-login a {
+
+    color: #2868ee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+
+.back-to-login a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+@media (max-width: 500px) {
+
+
+
+    .forgot-password-page {
+
+        padding: 15px;
+
+    }
+
+
+
+    .forgot-password-card {
+
+        padding: 40px 25px;
+
+    }
+
+
+
+    .forgot-password-card h2 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+/* ==========================================
+
+   RESET PASSWORD - CLEAN CENTERED PAGE
+
+   ========================================== */
+
+
+
+\#forgotPasswordPage {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Remove the old 2-column login layout */
+
+\#forgotPasswordPage .login-container {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    min-height: auto;
+
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    margin: 0 auto;
+
+    padding: 50px 40px;
+
+
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Hide the login left section if it exists */
+
+\#forgotPasswordPage .login-left {
+
+    display: none;
+
+}
+
+
+
+/* Make reset-password section use full width */
+
+\#forgotPasswordPage .login-right {
+
+    width: 100%;
+
+    max-width: 600px;
+
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+/* Reset form */
+
+\#forgotPasswordPage .login-form {
+
+    width: 100%;
+
+    max-width: 560px;
+
+
+
+    text-align: center;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* Logo */
+
+\#forgotPasswordPage .login-logo {
+
+    justify-content: center;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* Heading */
+
+\#forgotPasswordPage h2 {
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Subtitle */
+
+\#forgotPasswordPage .login-subtitle {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* Input */
+
+\#forgotPasswordPage .login-input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-bottom: 24px;
+
+}
+
+
+
+/* Button */
+
+\#forgotPasswordPage .custom-login-button {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* Back to login */
+
+\#forgotPasswordPage .forgot-password {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+}
+
+
+
+/* Security message */
+
+\#forgotPasswordPage .login-security {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    margin-top: 35px;
+
+}
+
+
+
+
+
+/* ==========================================
+
+   TABLET
+
+   ========================================== */
+
+
+
+@media (max-width: 768px) {
+
+
+
+    #forgotPasswordPage {
+
+        padding: 25px 16px;
+
+    }
+
+
+
+    #forgotPasswordPage .login-container {
+
+        max-width: 650px;
+
+        padding: 40px 30px;
+
+    }
+
+
+
+    #forgotPasswordPage .login-form {
+
+        max-width: 520px;
+
+    }
+
+}
+
+
+
+
+
+/* ==========================================
+
+   MOBILE
+
+   ========================================== */
+
+
+
+@media (max-width: 480px) {
+
+
+
+    #forgotPasswordPage {
+
+        padding: 20px 12px;
+
+    }
+
+
+
+    #forgotPasswordPage .login-container {
+
+        padding: 30px 20px;
+
+    }
+
+
+
+    #forgotPasswordPage .login-form {
+
+        width: 100%;
+
+    }
+
+
+
+    #forgotPasswordPage h2 {
+
+        font-size: 38px;
+
+    }
+
+
+
+    #forgotPasswordPage .login-subtitle {
+
+        font-size: 17px;
+
+    }
+
+}
+
+/* ==========================================================
+   EDUAI DASHBOARD VISUAL UPGRADE
+   All new styling is scoped to #dashboardPage.
+   Login and forgot-password styles above remain untouched.
+   ========================================================== */
+
+#dashboardPage {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(18px, 3vw, 34px);
+    border: 1px solid rgba(225, 225, 250, .9);
+    border-radius: 24px;
+    background:
+        radial-gradient(ellipse at 5% 0%, rgba(128, 112, 255, .13), transparent 30%),
+        radial-gradient(ellipse at 95% 8%, rgba(86, 177, 255, .12), transparent 28%),
+        linear-gradient(145deg, #f8f9ff 0%, #f3f4ff 55%, #fbf9ff 100%);
+}
+
+#dashboardPage::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -30%;
+    pointer-events: none;
+    background: conic-gradient(from 0deg, transparent, rgba(130, 112, 255, .08), transparent, rgba(78, 177, 255, .07), transparent);
+    filter: blur(35px);
+    animation: eduaiDashAmbient 24s linear infinite;
+}
+
+#dashboardPage .welcome-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(28px, 4vw, 44px);
+    min-height: 215px;
+    border: 1px solid rgba(255,255,255,.24);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 82% 22%, rgba(184, 173, 255, .32), transparent 24%),
+        radial-gradient(circle at 73% 120%, rgba(75, 182, 255, .25), transparent 38%),
+        linear-gradient(115deg, #171b42 0%, #2c286a 45%, #6250df 100%);
+    box-shadow: 0 18px 42px rgba(61, 51, 150, .2), inset 0 1px 0 rgba(255,255,255,.16);
+    animation: eduaiDashRise .55s ease both;
+}
+
+#dashboardPage .welcome-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+    top: -55%;
+    right: 7%;
+    border: 1px solid rgba(255,255,255,.19);
+    border-radius: 50%;
+    box-shadow: 0 0 0 26px rgba(255,255,255,.035), 0 0 0 55px rgba(255,255,255,.025);
+    animation: eduaiDashOrbit 16s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+#dashboardPage .welcome-card::after {
+    content: "✦";
+    position: absolute;
+    top: 50%;
+    right: clamp(26px, 7vw, 78px);
+    display: grid;
+    place-items: center;
+    width: clamp(76px, 9vw, 112px);
+    aspect-ratio: 1;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 30px;
+    background: linear-gradient(145deg, rgba(255,255,255,.2), rgba(255,255,255,.06));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.28), 0 18px 40px rgba(10,10,50,.2);
+    backdrop-filter: blur(14px);
+    color: #fff;
+    font-size: clamp(38px, 5vw, 58px);
+    animation: eduaiDashFloat 5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+#dashboardPage .welcome-card > div {
+    position: relative;
+    z-index: 1;
+    max-width: min(72%, 700px);
+}
+
+#dashboardPage .welcome-card h2 {
+    color: #fff;
+    font-size: clamp(25px, 3vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -.8px;
+}
+
+#dashboardPage .welcome-card p {
+    color: rgba(246,247,255,.84);
+    line-height: 1.75;
+}
+
+#dashboardPage .section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #242541;
+    font-weight: 750;
+    letter-spacing: -.35px;
+}
+
+#dashboardPage .section-title::before {
+    content: "";
+    width: 4px;
+    height: 22px;
+    border-radius: 99px;
+    background: linear-gradient(180deg, #a094ff, #5e4ce1);
+    box-shadow: 0 0 13px rgba(117,103,248,.28);
+}
+
+#dashboardPage .cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+}
+
+#dashboardPage .card {
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+    border: 1px solid rgba(225,226,246,.95);
+    border-radius: 20px;
+    background: rgba(255,255,255,.92);
+    box-shadow: 0 5px 18px rgba(43,44,95,.045), inset 0 1px 0 #fff;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    animation: eduaiDashRise .6s ease both;
+}
+
+#dashboardPage .card:nth-child(2) { animation-delay: .05s; }
+#dashboardPage .card:nth-child(3) { animation-delay: .1s; }
+#dashboardPage .card:nth-child(4) { animation-delay: .15s; }
+
+#dashboardPage .card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(133,118,255,.55);
+    box-shadow: 0 18px 34px rgba(61,51,150,.11);
+}
+
+#dashboardPage .card-icon {
+    display: grid;
+    place-items: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f2efff, #e7eaff);
+    border: 1px solid rgba(133,119,248,.14);
+    transition: transform .25s ease;
+}
+
+#dashboardPage .card:hover .card-icon {
+    transform: translateY(-2px) rotate(-3deg);
+}
+
+#dashboardPage .card h3 { color: #272743; }
+#dashboardPage .card p { color: #747891; line-height: 1.65; }
+
+#dashboardPage .card button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e0dcff;
+    border-radius: 11px;
+    background: #f5f2ff;
+    color: #5b4bd6;
+    font-weight: 700;
+    transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+#dashboardPage .card button:hover {
+    transform: translateY(-1px);
+    background: linear-gradient(100deg, #6554e5, #8170f8);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(91,76,220,.2);
+}
+
+#dashboardPage .card:first-child {
+    border-color: rgba(130,114,248,.3);
+    background: linear-gradient(145deg, #fff 35%, #f8f6ff);
+}
+
+#dashboardPage .card:first-child button {
+    border-color: transparent;
+    background: linear-gradient(100deg, #6554e5, #8170f8);
+    color: #fff;
+}
+
+#dashboardPage .ai-search {
+    border: 1px solid rgba(223,219,252,.95);
+    border-radius: 22px;
+    background: radial-gradient(ellipse at 100% 0%, rgba(143,127,255,.13), transparent 38%), rgba(255,255,255,.94);
+    box-shadow: 0 10px 28px rgba(47,43,110,.06), inset 0 1px 0 #fff;
+}
+
+#dashboardPage .ai-search h2 { color: #242541; }
+#dashboardPage .ai-search p { color: #777b95; }
+
+#dashboardPage .search-box {
+    padding: 8px;
+    border: 1px solid #e0e1f1;
+    border-radius: 15px;
+    background: #fafaff;
+    transition: border-color .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+#dashboardPage .search-box:focus-within {
+    border-color: #9b8fff;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(111,94,245,.1);
+}
+
+#dashboardPage .search-box input {
+    min-width: 0;
+    border: 0;
+    background: transparent;
+}
+
+#dashboardPage .search-box button {
+    position: relative;
+    overflow: hidden;
+    border-radius: 11px;
+    background: linear-gradient(105deg, #6554e5, #8170f8);
+    box-shadow: 0 7px 16px rgba(91,76,220,.19);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#dashboardPage .search-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 11px 23px rgba(91,76,220,.27);
+}
+
+@keyframes eduaiDashAmbient {
+    to { transform: rotate(360deg); }
+}
+@keyframes eduaiDashFloat {
+    0%, 100% { margin-top: 0; }
+    50% { margin-top: -8px; }
+}
+@keyframes eduaiDashOrbit {
+    from { transform: translate(0,0) rotate(0deg); }
+    to { transform: translate(-12px,10px) rotate(10deg); }
+}
+@keyframes eduaiDashRise {
+    from { opacity: 0; translate: 0 9px; }
+    to { opacity: 1; translate: 0 0; }
+}
+
+@media (max-width: 1100px) {
+    #dashboardPage .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+    #dashboardPage { padding: 14px; border-radius: 18px; }
+    #dashboardPage .welcome-card { min-height: 0; padding: 25px 21px; border-radius: 19px; }
+    #dashboardPage .welcome-card > div { max-width: 100%; }
+    #dashboardPage .welcome-card::after { display: none; }
+    #dashboardPage .cards { grid-template-columns: 1fr; gap: 13px; }
+    #dashboardPage .search-box { flex-direction: column; }
+    #dashboardPage .search-box button { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    #dashboardPage::before,
+    #dashboardPage .welcome-card,
+    #dashboardPage .welcome-card::before,
+    #dashboardPage .welcome-card::after,
+    #dashboardPage .card { animation: none !important; }
+    #dashboardPage .card,
+    #dashboardPage .card-icon,
+    #dashboardPage .card button,
+    #dashboardPage .search-box,
+    #dashboardPage .search-box button { transition: none !important; }
+}
